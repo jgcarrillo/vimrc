@@ -10,7 +10,7 @@ Vim permite la selección de texto mediante diferentes comandos pudiendo selecci
 
 De una manera introductoria, disponemos de varios modos, los más usados son:
 
-#### Modo normal
+#### :ghost: Modo normal 
 
 Es el modo en el que únicamente nos movemos por el código, las teclas fundamentales para ello son:
 
@@ -27,7 +27,7 @@ A partir de aquí la cosa se complica por lo que recomiendo informarse sobre el 
 
 De igual modo, una vez instalado Vim [Instalación](#Instalación) recomiendo ejecutar en la consola el comando ```vimtutor``` el cual abrirá un tutorial interactivo para conocer el editor en profundidad.
 
-#### Modo insertar
+#### :ghost: Modo insertar
 
 El modo insertar es aquel donde podemos escribir código. Para volver al modo normal presionamos la tecla ```<esc>```
 
@@ -57,5 +57,8 @@ Donde *"q"* equivale a quit, mientras que *"w"* corresponde con write. Guardar y
 
 ## ¿Esto es todo?
 
-Para nada! Vim requiere de mucha práctica y tiene una gran cantidad de comandos para mejorar el acceso al código. Sería imposible realizar un tutorial ameno y sencillo si nos centrámos en esos puntos. Recomiendo visitar la web oficial de Vim así como un [videojuego](http://vim-adventures.com/) creado para el propósito.
+Para nada! Vim requiere de mucha práctica y tiene una gran cantidad de comandos para mejorar el acceso al código. Sería imposible realizar un tutorial ameno y sencillo si nos centrámos en esos puntos. Recomiendo visitar la web oficial de Vim así como un [videojuego](http://vim-adventures.com/) creado para tal propósito.
 
+## Vimrc. Mejorando Vim
+
+Vimrc no es más que un archivo de texto plano que Vim procesa cada vez que se carga. Este archivo contiene toda la configuración y shortcuts que hayamos personalizado a nuestro gusto.
