@@ -4,7 +4,7 @@
 
 Se trata de una versión mejorada del editor de texto *Vi* presente en los sistemas UNIX. La principal característica de vim son sus distintos modos de uso (modo normal, insertar, etc), lo que permite ser más productivos cuando se domina su funcionamiento. Para más info [Wikipedia](https://es.wikipedia.org/wiki/Vim).
 
-Vim permite la selección de texto mediante diferentes comandos pudiendo seleccionar el texto por columnas, situarse en párrafos concretos, borrar líneas, etc. Esto hace que prácticamente no dependamos del ratón, aunque su **dominio requiere de mucha práctica**.
+Vim permite la selección de texto mediante diferentes comandos pudiendo seleccionar el texto por columnas, situarse en párrafos concretos, borrar líneas, etc. Esto hace que prácticamente no dependamos del ratón, aunque su **dominio requiere de mucha práctica** debido a la gran cantidad de instrucciones que podemos darle.
 
 ## Modos en Vim
 
@@ -29,13 +29,13 @@ De igual modo, una vez instalado Vim [Instalación](#Instalación) recomiendo ej
 
 #### :ghost: Modo insertar
 
-El modo insertar es aquel donde podemos escribir código. Para volver al modo normal presionamos la tecla ```<esc>```
+El modo insertar es aquel donde podemos escribir código, se accede a él pulsando la tecla ```ì``` Para volver al modo normal presionamos la tecla ```<esc>```.
 
 ## Instalación
 
 Por defecto Vim viene pre-instalado en sistemas UNIX (incluido MacOS), pero en Windows es necesario instalarlo desde su [web](https://www.vim.org/).
 
-Importante durante la instalación **agregar Vim al PATH de Windows**. En caso de no realizar este paso, una vez instalado, acudir a la ruta de instalación del mismo, copiarla, y agregarlo manualmente. 
+Importante durante la instalación es **agregar Vim al PATH de Windows**. En caso de no realizar este paso, una vez instalado, acudir a la ruta de instalación del mismo, copiarla, y agregarlo manualmente. 
 
 De esta manera Vim queda instalado en el equipo, se puede hacer uso del mismo mediante los comandos que veremos a continuación.
 
@@ -53,12 +53,26 @@ Una vez escrito el código mediante Vim (o cualquier labor que realicemos usando
 * :q! -> Para salirnos del archivo sin guardar los cambios.
 * :wq -> Nos salimos del archivo guardando cambios.
 
-Donde *"q"* equivale a quit, mientras que *"w"* corresponde con write. Guardar y salir. Fácil. En cualquier caso estos comandos no deben resultar extraños. Cuando instalamos Git, durante el proceso, nos pide elegir un editor de texto para escribir comentarios en los commits y demás labores que requieran de modificaciones en el código. Si lo dejamos por defecto instalará Vim.
+Donde *"q"* equivale a quit, mientras que *"w"* corresponde con write. Guardar y salir. Fácil. Estas instrucciones aparecerán reflejadas en la pantalla en la parte inferior izquierda. En cualquier caso estos comandos no deben resultar extraños. Cuando instalamos Git, durante el proceso, nos pide elegir un editor de texto para escribir comentarios en los commits y demás labores que requieran de modificaciones en el código. Si lo dejamos por defecto instalará Vim por lo que es muy probable que estos comandos ya sean conocidos.
 
 ## ¿Esto es todo?
 
-Para nada! Vim requiere de mucha práctica y tiene una gran cantidad de comandos para mejorar el acceso al código. Sería imposible realizar un tutorial ameno y sencillo si nos centrámos en esos puntos. Recomiendo visitar la web oficial de Vim así como un [videojuego](http://vim-adventures.com/) creado para tal propósito.
+Para nada! Vim requiere de mucha práctica y tiene una gran cantidad de comandos para mejorar el acceso a las diferentes partes del código y ser realmente productivos. Sería imposible realizar un tutorial ameno y sencillo si nos centrámos en esos puntos. Recomiendo visitar la web oficial de Vim así como un [videojuego](http://vim-adventures.com/) creado para tal propósito.
 
 ## Vimrc. Mejorando Vim
 
-Vimrc no es más que un archivo de texto plano que Vim procesa cada vez que se carga. Este archivo contiene toda la configuración y shortcuts que hayamos personalizado a nuestro gusto.
+Vimrc no es más que un archivo de texto plano que Vim procesa cada vez que se carga. Este archivo contiene toda la configuración y shortcuts que hayamos personalizado a nuestro gusto y es aquí donde se abre el gran abanico de posibilidades que nos brinda este editor.
+
+#### Apuntando a vimrc
+
+Este tutorial está basado fundamentalmente en Windows ya que el sistemas Unix muchas de las cosas aquí explicadas difieren bastante. En general he encontrado poca información sobre Vim y Vimrc para sistemas Windows y es por ello que me animé a plasmarlo en estas líneas para ayudar a otros como yo.
+
+El primer paso es indicarle a Vim que, cuando se inicie, lea el archivo *vimrc* que hayamos configurado. La forma más fácil de hacerlo es acudiendo a la consola y escribir ```vim --version```. Este comando nos dará bastante información, la que nos interesa está en la parte inferior pues saldrá algo parecido a esto:
+
+```
+archivo "vimrc" del sistema: "$VIM\vimrc"
+archivo "vimrc" del usuario: "$HOME\_vimrc"
+...
+```
+
+Vim entrará por orden en los directorios de ese listado hasta que encuentre el archivo vimrc. *$HOME* hace referencia a la ruta **C:/Users/nombre-usuario** mientras que *$VIM* es la ruta donde se instaló Vim. Deberemos de crear en ellos el archivo vimrc.
