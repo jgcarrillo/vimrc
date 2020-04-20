@@ -1,3 +1,5 @@
+*WIP*
+
 # Introducción a Vim y vimrc
 
 ## ¿Qué es vim? Un vistazo general
