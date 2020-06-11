@@ -157,3 +157,5 @@ Número de línea + G -> Nos lleva hasta esa línea
 % -> Si lo usamos sobre [{( nos llevará al cierre de los mismos
 :/s/texto a cambiar/texto nuevo/gc -> Modo para reemplazar. la letra "c" del final sirve para pedir confirmación
 ```
+
+![Gif](https://media.giphy.com/media/j2pSb1if71RKsVbRGm/giphy.gif)
