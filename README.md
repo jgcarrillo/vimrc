@@ -78,3 +78,82 @@ archivo "vimrc" del usuario: "$HOME\_vimrc"
 ```
 
 Vim entrará por orden en los directorios de ese listado hasta que encuentre el archivo vimrc. *$HOME* hace referencia a la ruta **C:/Users/nombre-usuario** mientras que *$VIM* es la ruta donde se instaló Vim. Deberemos de crear en ellos el archivo vimrc.
+
+## Comandos más usados
+
+Tras unas semanas de uso he notado como he mejorado en la velocidad de escritura. Aunque no he conseguido quitarme al 100% el ratón, sobre todo para acciones como copiar y pegar, si que he conseguido escribir código más deprisa. Los comandos que mas uso son:
+
+#### Comandos de movimiento
+
+```
+w -> Moverse hacia adelante al principio de cada palabra
+W -> Moverse hacia adelante al principio de cada palabra sin tener en cuenta caractéres
+e -> Moverse hacia adelante al final de cada palabra
+E -> Moverse hacia adelante al final de cada palabra sin tener en cuenta caractéres
+b -> Moverse hacia atrás al principio de cada palabra
+B -> Moverse hacia atrás al principio de cada palabra sin tener en cuenta caractéres
+
+0 -> Ir al principio de una línea
+$ -> Ir al final de una línea
+gg -> Ir al principio del documento
+G -> Ir al final del documento
+zz -> Centrar el cursor
+```
+
+#### Comandos para insertar
+
+```
+i -> Insertar antes del cursor
+I -> Insertar al principio de la línea
+a -> Insertar después del cursor
+A -> Insertar al final de la línea
+o -> Insertar una línea debajo de la línea en la que nos encontramos
+O -> Insertar una línea encima de la línea en la que nos encontramos
+ea -> Insertar al final de la palabra sobre la que estemos posicionados
+
+gd -> (Sobre una variable o cualquier cosa que hayamos definido previamente) El cursor de moverá en la línea donde definimos esa variable
+gf -> (Sobre un arvhivo, por ejemplo la hoja de estilos linkeada) Nos llevará a ese archivo en una nueva ventana
+```
+
+#### Comandos para editar
+
+```
+r -> Reemplazar el carácter sobre el que nos encontramos
+x -> Eliminar caracteres 
+u -> Deshacer
+Ctrl + r -> Rehacer
+. -> Repetir el último comando
+cw -> Sobre una palabra, elimina el texto a partir del cursor
+ciw -> Sobre una palabra, la elimina y nos deja el cursor preparado para escribir
+```
+
+#### Modo visual
+
+```
+v -> Inicia el modo visual
+Ctrl + V -> Inicia el modo visual en modo bloque
+Esc -> Salir del modo visual
+> -> Tabulación hacia la derecha
+< -> Tabulación hacia la izquierda
+```
+
+#### Copiar y pegar
+
+```
+yy -> Copiar una línea
+2yy -> Copiar dos líneas
+p -> Pegar después del cursor
+P -> Pegar antes del cursor
+dd -> Eliminar una línea
+d$ -> Elimina el contenido de toda una línea dejando la línea a partir de dónde tengamos el cursor
+dw -> Elimina palabra a palabra
+```
+
+#### Comandos especiales
+
+```
+Número de línea + G -> Nos lleva hasta esa línea
+/término de búsqueda -> Busca en el documento, con "n" nos iremos moviendo entre los resultados
+% -> Si lo usamos sobre [{( nos llevará al cierre de los mismos
+:/s/texto a cambiar/texto nuevo/gc -> Modo para reemplazar. la letra "c" del final sirve para pedir confirmación
+```
