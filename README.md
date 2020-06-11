@@ -158,4 +158,4 @@ Número de línea + G -> Nos lleva hasta esa línea
 :/s/texto a cambiar/texto nuevo/gc -> Modo para reemplazar. la letra "c" del final sirve para pedir confirmación
 ```
 
-![](Animated GIF-source.gif)
+![](gif-prueba.gif)
