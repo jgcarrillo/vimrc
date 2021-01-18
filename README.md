@@ -77,6 +77,14 @@ archivo "vimrc" del usuario: "$HOME\_vimrc"
 
 Vim entrará por orden en los directorios de ese listado hasta que encuentre el archivo vimrc. *$HOME* hace referencia a la ruta **C:/Users/nombre-usuario** mientras que *$VIM* es la ruta donde se instaló Vim. Deberemos de crear en ellos el archivo vimrc.
 
+En mi caso, la instalación de gVim se realizó en **C:\Program Files (x86)\Vim\vim82**, por lo que en el archivo *_vimrc* creado en */vim* he redireccionado a mi _vimrc personalizado pediante la línea ``source $HOME/vimfiles/_vimrc``.
+
+Dentro del directorio anterior he creado un _vimrc totálmente vacío al que he ido añadiendo las características que necesitaba. De esta manera se generan dos archivos, actuando uno como copia de seguridad.
+
+Importante también la creación de archivo **undodir** en la ruta especificada para conservar los cambios entre sesiones.
+
+Algunas de las características añadidas se pueden consultar desde el repositorio de [Danirod](https://github.com/danirod/vimrc).
+
 ## Comandos más usados
 
 Tras unas semanas de uso he notado como he mejorado en la velocidad de escritura. Aunque no he conseguido quitarme al 100% el ratón, sobre todo para acciones como copiar y pegar, si que he conseguido escribir código más deprisa. Los comandos que mas uso son:
