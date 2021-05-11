@@ -119,6 +119,7 @@ ea -> Insertar al final de la palabra sobre la que estemos posicionados
 
 gd -> (Sobre una variable o cualquier cosa que hayamos definido previamente) El cursor de moverá en la línea donde definimos esa variable
 gf -> (Sobre un arvhivo, por ejemplo la hoja de estilos linkeada) Nos llevará a ese archivo en una nueva ventana
+Ctrl + O -> Cuando hemos usado gd para ir a la definición, pulsamos esta combinación para volver a donde estábamos
 ```
 
 #### Comandos para editar
